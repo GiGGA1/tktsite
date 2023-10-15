@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ background: greenyellow;   
+ min-height: 100ch;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.clock-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 25px 15px;
+    text-align: center;
+    width: 390px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.numbers {
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+}
+

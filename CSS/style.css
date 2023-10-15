@@ -23,8 +23,9 @@ img {
 }  */
   
 .calendar { 
-    position: relative; 
+    position: absolute; 
     width: 260px; 
+    margin-left: 150px;
 
 } 
   
@@ -63,7 +64,7 @@ img {
     padding: 5px 0; 
 } 
   
-.day { 
+.weekdays { 
     color: #fff; 
     font-size: 20px; 
     margin-top: 20px; 
@@ -80,6 +81,36 @@ img {
     font-size: 1.2em; 
     margin-bottom: 20px; 
 } 
+
+.clock {
+    text-align: center;
+    width: 0;
+    display: flex;
+}
+
+
+.time {
+    color: #fff; 
+    font-size: 10px; 
+    margin-bottom: 20px; 
+}
+
+.hours {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.minutes {
+    color: #fff;
+    font-size: 20px;
+}
+
+.seconds {
+    color: red;
+    font-size: 10px;
+}
+
 
 /* ____________end c___________________ */
 
