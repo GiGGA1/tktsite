@@ -12,6 +12,14 @@ img {
     vertical-align: middle;
 }
 
+/* ______ამინდი________ */
+
+
+
+
+
+
+
 /* _____________calendar_________________ */
 
 /* .body { 
@@ -86,6 +94,7 @@ img {
     text-align: center;
     width: 0;
     display: flex;
+    
 }
 
 
@@ -98,7 +107,16 @@ img {
 .hours {
     color: #fff;
     font-size: 20px;
+    padding-left: 30px;
 
+}
+
+.colon {
+    display: flex;
+        color: #fff; 
+    font-size: 20px; 
+    margin-bottom: 100px; 
+    
 }
 
 .minutes {

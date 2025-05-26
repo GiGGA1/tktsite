@@ -1,0 +1,194 @@
+.navico {
+    width: 50px;
+    
+}
+
+/* __________time__________ */
+
+
+.calendar { 
+    position: absolute; 
+    width: 260px; 
+    margin-left: 150px;
+
+} 
+
+.calendar .calendar-body { 
+    display: flex; 
+    justify-content: center; 
+    /* align-items: center;  */
+    /* flex-direction: column;  */
+    font-size: 30px; 
+    transform: translate(-50%, -50%); 
+    width: 100px; 
+    height: 100px; 
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 20px 20px 300px rgba(0, 0, 0, 0.2); 
+    border-radius: 22px; 
+    backdrop-filter: blur(2px); 
+} 
+  
+.circle { 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background: rgb(247, 247, 6); 
+    position: relative; 
+    left: 25px; 
+    top: 8px; 
+} 
+  
+.month { 
+    color: #fff; 
+    background: green; 
+    width: 30%; 
+    font-size: 15px; 
+    text-align: center; 
+    padding: 5px 0; 
+} 
+  
+.weekdays { 
+    color: #fff; 
+    font-size: 20px; 
+    margin-top: 20px; 
+} 
+  
+.date { 
+    color: #fff; 
+    font-size: 75px; 
+    margin-bottom: 20px; 
+} 
+  
+.year { 
+    color: #fff; 
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+} 
+
+.clock {
+    text-align: center;
+    width: 0;
+    display: flex;
+    
+}
+
+
+.time {
+    color: #fff; 
+    font-size: 10px; 
+    margin-bottom: 20px; 
+}
+
+.hours {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 30px;
+
+}
+
+.colon {
+    display: flex;
+        color: #fff; 
+    font-size: 20px; 
+    margin-bottom: 100px; 
+    
+}
+
+.minutes {
+    color: #fff;
+    font-size: 20px;
+}
+
+.seconds {
+    color: red;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background: #005580;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.clock {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.date-box {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+main {
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #004060;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: 230px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+.title h1 {
+    font-size: 50px;
+    color: #fff;
+}

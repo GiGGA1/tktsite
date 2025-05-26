@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/mtsketa.css">
+    <title>Mtsketa</title>
+</head>
+<body>
+        <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><img class="navico" src="saiti/ChatGPT Image May 18, 2025, 05_01_16 PM.png" alt=""><img class="navico" src="pic/nav-pic/map-marker.svg" alt="map-marker"> <img class="navico" src="pic/nav-pic/flag-for-georgia.svg" alt="flag-to-georgia"></b></a>
+    
+<!-- _______time_______ -->
+
+ <div class="container">
+
+    <!-- ______________calendar________________ -->
+
+      <div class="calendar"> 
+            <div class="circle"></div> 
+            <div class="calendar-body"> 
+                <!-- <span id="datetime"></span> -->
+
+
+
+
+
+
+                <div class="clock"> 
+                  <div> 
+                    <div id="hours" class="hours"></div>
+                  </div>
+                  <div class="colon">:</div>
+                  <div>  
+                    <div id="minutes" class="minutes"></div>
+                  </div>
+                  <div>
+                    <div id="seconds" class="seconds"></div>
+                  </div>  
+                </div>  
+
+                <div id="month" class="month">August</div> 
+                <div id="weekdays" class="weekdays">Thursday</div>  
+              
+                <div id="data" class="date">27</div>  
+                <div id="year" class="year">2025</div>  
+
+
+           </div> 
+      </div> 
+  </div>
+
+
+  <script>
+  function updateClock() {
+    const now = new Date();
+
+    // საათი, წუთი, წამი
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // თვე, დღე, რიცხვი, წელი
+    let monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    let weekdayNames = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+
+    document.getElementById("month").textContent = monthNames[now.getMonth()];
+    document.getElementById("weekdays").textContent = weekdayNames[now.getDay()];
+    document.getElementById("data").textContent = now.getDate();
+    document.getElementById("year").textContent = now.getFullYear();
+      }
+
+  // პირველადი გაშვება
+  updateClock();
+
+  // განახლება ყოველ წამში
+  setInterval(updateClock, 1000);
+</script>
+
+<!-- ___________________ -->
+
+
+<header>
+  <h1 class="title">🚐 ინკლუზიური ტური მცხეთაში</h1>
+  <div class="clock">
+    <span id="hours"></span>:<span id="minutes"></span><span id="seconds"></span>
+  </div>
+  <div class="date-box">
+    <span id="weekdays"></span><span id="data"></span> <span id="month"></span> <span id="year"></span>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>🔎 ტურის აღწერა</h2>
+    <p><strong>მარშრუტი:</strong> თბილისი – მცხეთა</p>
+    <p><strong>ტიპი:</strong> ადგილობრივი | <strong>კატეგორია:</strong> ინკლუზიური | <strong>კლასი:</strong> საშუალო</p>
+    <p><strong>თარიღი:</strong> 30 მაისი | <strong>მონაწილეები:</strong> 10 ადამიანი (ასაკი 50–60)</p>
+  </section>
+
+  <section>
+    <h2>🏛 ღირსშესანიშნაობები</h2>
+    <div class="gallery">
+      <figure>
+        <img src="saiti/mtsketa/unnamed.webp" alt="სვეტიცხოველი">
+        <figcaption>სვეტიცხოველი (XI ს)</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/jvrismonasteri.webp" alt="ჯვრის მონასტერი">
+        <figcaption>ჯვრის მონასტერი (VI ს)</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/samtavrosmonasteri.webp" alt="სამთავრო">
+        <figcaption>სამთავროს მონასტერი (XI ს)</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/შიომღვიმის კომპლექსი .jpg" alt="შიომღვიმე">
+        <figcaption>შიომღვიმის კომპლექსი (VI ს)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>📅 ტურის პროგრამა</h2>
+    <ul>
+      <li>09:00 – შეკრება ველოსიპედის ძეგლთან (Lunch Box)</li>
+      <li>11:30 – სვეტიცხოვლის მონახულება</li>
+      <li>12:40 – ჯვრის მონასტრის მონახულება</li>
+      <li>14:00 – სადილი კაფე “ფლორია”-ში</li>
+      <li>16:00 – სამთავროს მონასტერი</li>
+      <li>17:00 – შიომღვიმის კომპლექსი</li>
+      <li>17:30 – ვახშამი რესტორან “ბაგინეთი”-ში</li>
+      <li>18:30 – დაბრუნება თბილისში</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💰 კალკულაცია</h2>
+    <p>ტრანსპორტი: 60₾ | სადილი: 50₾ | ვახშამი: 70₾ | Lunch Box: 45₾ | გიდი: 50₾</p>
+    <p>მომსახურების 20% – 55₾</p>
+    <strong>სულ ერთ ადამიანზე: 330₾</strong>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 ინკლუზიური ტური მცხეთაში | ორგანიზება: VVA Company</p>
+</footer>
+
+<script src="clock.js"></script>
+    
+</body>
+</html>

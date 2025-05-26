@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/kasbegi.css">
+    <title>ყაზბეგი</title>
+</head>
+<body>
+       <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><img class="navico" src="saiti/ChatGPT Image May 18, 2025, 05_01_16 PM.png" alt=""><img class="navico" src="pic/nav-pic/map-marker.svg" alt="map-marker"> <img class="navico" src="pic/nav-pic/flag-for-georgia.svg" alt="flag-to-georgia"></b></a>
+    
+<!-- _______time_______ -->
+
+ <div class="container">
+
+    <!-- ______________calendar________________ -->
+
+      <div class="calendar"> 
+            <div class="circle"></div> 
+            <div class="calendar-body"> 
+                <!-- <span id="datetime"></span> -->
+
+
+
+
+
+
+                <div class="clock"> 
+                  <div> 
+                    <div id="hours" class="hours"></div>
+                  </div>
+                  <div class="colon">:</div>
+                  <div>  
+                    <div id="minutes" class="minutes"></div>
+                  </div>
+                  <div>
+                    <div id="seconds" class="seconds"></div>
+                  </div>  
+                </div>  
+
+                <div id="month" class="month">August</div> 
+                <div id="weekdays" class="weekdays">Thursday</div>  
+              
+                <div id="data" class="date">27</div>  
+                <div id="year" class="year">2025</div>  
+
+           </div> 
+      </div> 
+  </div>
+
+
+  <script>
+  function updateClock() {
+    const now = new Date();
+
+    // საათი, წუთი, წამი
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // თვე, დღე, რიცხვი, წელი
+    let monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    let weekdayNames = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+
+    document.getElementById("month").textContent = monthNames[now.getMonth()];
+    document.getElementById("weekdays").textContent = weekdayNames[now.getDay()];
+    document.getElementById("data").textContent = now.getDate();
+    document.getElementById("year").textContent = now.getFullYear();
+      }
+
+  // პირველადი გაშვება
+  updateClock();
+
+  // განახლება ყოველ წამში
+  setInterval(updateClock, 1000);
+</script>
+
+
+
+ <header>
+  <h1 class="title">🚐 ინკლუზიური ტური ყაზბეგი</h1>
+  <div class="clock">
+    <span id="hours"></span>:<span id="minutes"></span><span id="seconds"></span>
+  </div>
+  <div class="date-box">
+    <span id="weekdays"></span><span id="data"></span> <span id="month"></span> <span id="year"></span>
+  </div>
+</header>
+
+
+<main>
+  <section>
+    <h2>🔎 ტურის აღწერა</h2>
+    <p>ტურის მარშრუტი: თბილისი – ყაზბეგი | 8-11 ივნისი | 6 მონაწილე</p>
+    <p>კატეგორია: ექსკლუზიური | მიმართულება: კულტურულ-შემეცნებითი</p>
+  </section>
+
+  <section>
+    <h2>🏞 ღირსშესანიშნაობები</h2>
+    <div class="gallery">
+    <figure>
+        <img src="saiti/გერგეტი.jpg" alt="გერგეტი">
+        <figcaption>გერგეტის სამება</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/gudauri-map.jpg" alt="გუდაური">
+        <figcaption>გუდაური</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/dariali.jpg" alt="დარიალი">
+        <figcaption>დარიალი</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/ananuri-fortress.jpg" alt="ანანური">
+        <figcaption>ანანური</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>📅 პროგრამა</h2>
+    <ul>
+      <li>🗓 დღე 1: ჩამოსვლა, The Biltmore Hotel, ქაშუეთი, ფუნიკულიორი</li>
+      <li>🗓 დღე 2: ანანური, გუდაური, ყაზბეგი, დარიალი, ღვინის დეგუსტაცია</li>
+      <li>🗓 დღე 3: გერგეტი, პიკნიკი, ჯომარდობა, ქართული საღამო</li>
+      <li>🗓 დღე 4: Check-out, აეროპორტში ტრანსფერი</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💰 კალკულაცია</h2>
+    <p><strong>Single Room:</strong> 5,420₾ | <strong>Twin Room:</strong> 7,724₾</p>
+    <p>სერვისები: სასტუმროები, ტრანსპორტი, გიდი, სადაზღვევო, აქტივობები</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 თბილისი-ყაზბეგი ტური | ორგანიზება: სტუდენტები და ლალი მიქელაძე</p>
+</footer>
+
+<script src="clock.js"></script>
+
+</body>
+</html>

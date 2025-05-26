@@ -1,35 +1,34 @@
-const date = new Date();
+<script>
+  function updateClock() {
+    const now = new Date();
 
-// dam elements
-const weekdaysEL = document.getElementById('weekdays');
-const monthEL = document.getElementById('month');
-const yearEL = document.getElementById('year');
-const hoursEL = document.getElementById('hours');
-const minutesEL = document.getElementById('minutes');
-const secondsEL = document.getElementById('seconds');
+    // საათი, წუთი, წამი
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
-// date
-const year = date.getYear();
-const month = date.getMonth();
-const weekdays = date.getweekdays();
-const hours = date.getHours();
-const minutes = date.getMinutes();
-const seconds = date.getSeconds();
+    // თვე, დღე, რიცხვი, წელი
+    let monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    let weekdayNames = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
 
-yearEL.innerText = year;
-monthEL.innerText = month;
-weekdaysEL.innerText = weekdays;
-hoursEL.innerText = hours;
-minutesEL.innerText = minutes;
-secondsEL.innerText = seconds;
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
 
+    document.getElementById("month").textContent = monthNames[now.getMonth()];
+    document.getElementById("weekdays").textContent = weekdayNames[now.getDay()];
+    document.getElementById("data").textContent = now.getDate();
+    document.getElementById("year").textContent = now.getFullYear();
+      }
 
+  // პირველადი გაშვება
+  updateClock();
 
-setInterval(() => {
-    const date = new Date();
-    secondsEL.innerText = date.getSeconds();
-}, 1000);
-
-
-
-// console.log(date.getweekdays(), date.getYear(), date.getMonth(), date.getHours(), date.getMinutes(), date.getSecounds());
+  // განახლება ყოველ წამში
+  setInterval(updateClock, 1000);
+</script>

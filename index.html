@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tiket GEO</title>
+    <title>T GEO</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><img class="navico" src="pic/nav-pic/map-marker.svg" alt="map-marker"> <img class="navico" src="pic/nav-pic/flag-for-georgia.svg" alt="flag-to-georgia"></b></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><img class="navico" src="saiti/ChatGPT Image May 18, 2025, 05_01_16 PM.png" alt=""><img class="navico" src="pic/nav-pic/map-marker.svg" alt="map-marker"> <img class="navico" src="pic/nav-pic/flag-for-georgia.svg" alt="flag-to-georgia"></b></a>
   <!-- <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a> -->
 
 </div>
@@ -44,10 +44,16 @@
             <div class="calendar-body"> 
                 <!-- <span id="datetime"></span> -->
 
+
+
+
+
+
                 <div class="clock"> 
                   <div> 
                     <div id="hours" class="hours"></div>
                   </div>
+                  <div class="colon">:</div>
                   <div>  
                     <div id="minutes" class="minutes"></div>
                   </div>
@@ -59,12 +65,48 @@
                 <div id="month" class="month">August</div> 
                 <div id="weekdays" class="weekdays">Thursday</div>  
               
-                <div id="data" class="date">17</div>  
-                <div id="year" class="year">2023</div>  
+                <div id="data" class="date">27</div>  
+                <div id="year" class="year">2025</div>  
 
            </div> 
       </div> 
   </div>
+
+
+  <script>
+  function updateClock() {
+    const now = new Date();
+
+    // საათი, წუთი, წამი
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // თვე, დღე, რიცხვი, წელი
+    let monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    let weekdayNames = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+
+    document.getElementById("month").textContent = monthNames[now.getMonth()];
+    document.getElementById("weekdays").textContent = weekdayNames[now.getDay()];
+    document.getElementById("data").textContent = now.getDate();
+    document.getElementById("year").textContent = now.getFullYear();
+      }
+
+  // პირველადი გაშვება
+  updateClock();
+
+  // განახლება ყოველ წამში
+  setInterval(updateClock, 1000);
+</script>
   <!-- ____________end c_______________ -->
 
 
@@ -181,36 +223,36 @@
   <div class="w3-row-padding w3-text-white w3-large">
     <div class="w3-half w3-margin-bottom">
       <div class="w3-display-container">
-        <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
-        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+        <a href="tbilisi.html"><img src="saiti/5d36005d-703d-4b90-a181-45f9260b3c6a.jpeg" alt="Tbilisi" style="width:100%"></a>
+        <span class="w3-display-bottomleft w3-padding">Tbilisi</span>
       </div>
     </div>
     <div class="w3-half">
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="https://www.w3schools.com/w3images/newyork2.jpg" alt="New York" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">New York</span>
+            <a href="mtsketa.html"><img src="saiti/5e93c235-a680-40ef-ade4-0eb2157c555e.jpeg" alt="New York" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">Mtsketa</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+            <a href="kazbegi.html"><img src="saiti/697f6041-4606-45b5-b1b5-54fc6b26f889.jpeg" alt="San Francisco" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">Kasbegi</span>
           </div>
         </div>
       </div>
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="https://www.w3schools.com/w3images/pisa.jpg" alt="Pisa" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Pisa</span>
+            <img src="saiti/8f42bc74-c9b4-47e4-b65e-967513e4d1a8.jpeg" alt="Pisa" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Kakheti</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Paris</span>
+            <img src="saiti/a185827a-ddfa-4a31-b43b-4bbf88b817c7.jpeg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Svaneti</span>
           </div>
         </div>
       </div>
@@ -218,7 +260,7 @@
   </div>
 
   <!-- Explore Nature -->
-  <div class="w3-container">
+  <!-- <div class="w3-container">
     <h3>Explore Nature</h3>
     <p>Travel with us and see nature at its finest.</p>
   </div>
@@ -241,7 +283,7 @@
         <button class="w3-button w3-margin-bottom">Buy Tickets</button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Newsletter -->
   <div class="w3-container">
@@ -284,8 +326,8 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>This website was made with W3schools Spaces. Make your own free website today!</p>
-<a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+
+
 <!-- Footer end. -->
 </footer>
 
