@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/kahketi.css">
+    <title>Tbilisi</title>
+</head>
+<body>
+      <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><img class="navico" src="saiti/ChatGPT Image May 18, 2025, 05_01_16 PM.png" alt=""><img class="navico" src="pic/nav-pic/map-marker.svg" alt="map-marker"> <img class="navico" src="pic/nav-pic/flag-for-georgia.svg" alt="flag-to-georgia"></b></a>
+    
+<!-- _______time_______ -->
+
+ <div class="container">
+
+    <!-- ______________calendar________________ -->
+
+      <div class="calendar"> 
+            <div class="circle"></div> 
+            <div class="calendar-body"> 
+                <!-- <span id="datetime"></span> -->
+
+
+
+
+
+
+                <div class="clock"> 
+                  <div> 
+                    <div id="hours" class="hours"></div>
+                  </div>
+                  <div class="colon">:</div>
+                  <div>  
+                    <div id="minutes" class="minutes"></div>
+                  </div>
+                  <div>
+                    <div id="seconds" class="seconds"></div>
+                  </div>  
+                </div>  
+
+                <div id="month" class="month">August</div> 
+                <div id="weekdays" class="weekdays">Thursday</div>  
+              
+                <div id="data" class="date">27</div>  
+                <div id="year" class="year">2025</div>  
+
+           </div> 
+      </div> 
+  </div>
+
+
+  <script>
+  function updateClock() {
+    const now = new Date();
+
+    // საათი, წუთი, წამი
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // თვე, დღე, რიცხვი, წელი
+    let monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    let weekdayNames = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+
+    document.getElementById("month").textContent = monthNames[now.getMonth()];
+    document.getElementById("weekdays").textContent = weekdayNames[now.getDay()];
+    document.getElementById("data").textContent = now.getDate();
+    document.getElementById("year").textContent = now.getFullYear();
+      }
+
+  // პირველადი გაშვება
+  updateClock();
+
+  // განახლება ყოველ წამში
+  setInterval(updateClock, 1000);
+</script>
+
+<!-- ___________________ -->
+
+<header>
+    <h1 class="title">🧳 თბილისის ტური – შემეცნებით-კულტურული</h1>
+    <div class="clock">
+      <div id="hours" class="hours"></div>
+      <div id="minutes" class="minutes"></div>
+      <div id="seconds" class="seconds"></div>
+    </div>
+    <div class="date-box">
+      <span id="weekdays"></span> <span id="data"></span> <span id="month"></span> <span id="year"></span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>📌 ტურის აღწერა</h2>
+      <p>ტური გაიმართება 4-5-6-7 ნოემბერს . მიმართულება – შემეცნებით-კულტურული. კატეგორია – ექსკლუზიური, კლასი – ბიზნეს კლასი.</p>
+      <p>მონაწილეთა რაოდენობა: 10 (5 ქალი, 5 კაცი), ასაკი: 25-50. ჰობი: კულტურა, ხელოვნება, სიახლეები.</p>
+    </section>
+
+      <section>
+    <h2>🏛 ღირსშესანიშნაობები</h2>
+    <div class="gallery">
+      <figure>
+        <img src="saiti/იყალთოს მონასტერი.jpg" alt="იყალთოს მონასტერი">
+        <figcaption>იყალთოს მონასტერი</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/telavi-historical-ethnographic-museum-gnta.webp" alt="თელავის ისტორიულ-ეთნგრაფიული მუზეუმი">
+        <figcaption>თელავის ისტორიულ-ეთნგრაფიული მუზეუმი</figcaption>
+      </figure>
+      <figure>
+        <img src="saiti/kurzen.jpg" alt="ყურძენი">
+        <figcaption>ადგილობრივი მეურნეობა</figcaption>
+      </figure>
+    </div>
+  </section>
+
+    <section>
+      <h2>🏛 მოსანახულებელი ადგილები</h2>
+      <ul>
+        <li>იყალთოს მონასტერი</li>
+        <li>თელავის ისტორიულ-ეთნგრაფიული მუზეუმი</li>
+        <li>ადგილობრივი მეურნეობა</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📅 მომსახურების პროგრამა</h2>
+      <p><strong>დღე 1:</strong>   09:00-10:30-საუზმე სასტუმრო ,,ქვევრებში“
+                                    12:00-13:00- იყალთოს მონასტერი (VI საუკუნის ქართული ხუროთმოძღვრების ძეგლი.
+                                    13:30-14:30 - თელავის ისტორიულ-ეთნგრაფიული მუზეუმი.
+                                    15:00-16:00- სადილი რესტორან ,,ნადიკვარი ტერასაში“
+                                    17:00-19:00-ღვინის მარანი ,,თელავი“ (XX საუკუნე).
+                                    19:40-20:30- მომსახურების პროგრამა 3-ის გაცნობა.
+                                    21:00-22:00-ვახშამი სასტუმრო ,,ქვევრებში“.
+</p>
+      <p><strong>დღე 2:</strong>    07:00-08:00- საუზმე სასტუმრო ,,ქვევრებში“.
+                                    09:00- რთველი (გოგია ახალკაციშვილი ადგილობრივი მევენახე)(პარალელურ რეჟიმში გადაღება)
+                                    11:00-ღვინის დაწურვა(ტრადიციული მეთოდებით).
+                                    12:00- 15:00-კახური შოთების ჩაკვრა,ჩურჩხელების ამოვლება,მწვადების შეწვა.
+                                    16:00-19:00-ტრადიციული ,,სუფრის“ გაშლა,მიმდებარე ტერიტორიაზე მევენახე გოგია ახალკაციშვილის მასპინძლობით,ვახშამი.
+                                    21:00-22:00-სასტუმრო ,,ქვევრებში“ ტურის შეჯამება (საჩუქრები-ბოთლი ღვინო,QR CODE -ით,ტურის ფოტოებით.)
+</p>
+      <p><strong>დღე 3:</strong>    07:00-08:30-საუზმე სასტუმრო ,,ქვევრებში“, Check Out, აეროპორტის მიმართულებით გამგზავრება.
+                                    11:00- დამშვიდობება.
+</p>
+    </section>
+
+    <section>
+      <h2>💰 კალკულაცია</h2>
+      <p>სასტუმრო ,,ქვევრები“  3  ღამე /4 დღე  (BB+Dinner ) 2 568₾
+        The Biltmore Hotel Tbilisi-Dinner Box 55₾
+        სატრანსპორტო მომსახურებაVVA Company (ტრანსფერი)- 480₾ 
+        რესტორანი ,,ნადიკვარი ტერასა“ სადილი 85₾
+        ღვინის მარანი ,,თელავი“ 80 ₾
+        თელავის ისტორიულ-ეთნოგრაფიული მუზეუმი 20₾
+        გოგია ახალკაციშვილის მეურნეობა 100₾
+        სტუდია ,,New Vision” 150₾
+        გიდის მომსახურება 100₾
+        ბილეთები 1 856₾ (ორი გზა)
+        ტურისტული კომპანია VVA Company მომსახურების 20 %
+</p>
+      <strong>სულ: 6 593₾ ერთ ადამიანზე</strong>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 თბილისის ტური | ორგანიზება: VVA Company</p>
+  </footer>
+
+  <script src="clock.js"></script>
+
+
+
+
+
+</body>
+</html>
